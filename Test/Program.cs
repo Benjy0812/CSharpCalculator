@@ -57,7 +57,7 @@
                 Console.WriteLine("\t+ : Add");
                 Console.WriteLine("\t- : Subtract");
                 Console.WriteLine("\t* : Multiply");
-                Console.WriteLine("\t* : Multiply");
+                Console.WriteLine("\t% : Multiply");
                 Console.WriteLine("\t/ : Divide");
 
                 switch (Console.ReadLine())
@@ -78,24 +78,27 @@
                         result = num1 / num2;
                         Console.WriteLine($"Your result: {num1} / {num2} = " + result);
                         break;
+                    case "%":
+                        result = num1 % num2;
+                        Console.WriteLine($"Your result: {num1} % {num2} = " + result);
+                        break;
                     default:
                         Console.WriteLine("Thats was not a valid option");
                             break;
-                 }
+                }
              Console.WriteLine("Would you like to continue? (Y = yes, N = No)");
             } while (Console.ReadLine().ToUpper() == "Y");
 
-             Console.WriteLine("Bye");
+            Console.WriteLine("Bye");
 
 
+            /*Console.WriteLine("Whats your name:");
+             string name = Console.ReadLine();
+             Console.WriteLine($"Your name is {name}!");
 
-           /*Console.WriteLine("Whats your name:");
-            string name = Console.ReadLine();
-            Console.WriteLine($"Your name is {name}!");
-
-            Console.WriteLine("How old are you?");
-            int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"You are:{age} old");*/
+             Console.WriteLine("How old are you?");
+             int age = Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine($"You are:{age} old");*/ 
         }
     }
 }
