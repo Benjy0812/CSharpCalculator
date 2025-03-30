@@ -5,9 +5,9 @@
         static void Main(string[] args)
         {
             do {
-                double num1 = 0;
-                double num2 = 0;
-                double result = 0;
+                double num1;
+                double num2;
+                double result;
 
                 Console.WriteLine("------------------");
                 Console.WriteLine("Calculator Program");
@@ -51,10 +51,10 @@
                         break;
                     default:
                         Console.WriteLine("That was not a valid option");
-                            break;
+                        break;
                 }
-                Console.Write("Would you like to continue? (Y = yes, N = No): ");
-            } while (Console.ReadLine().ToUpper() == "Y");
+                Console.Write("Would you like to continue? (y = yes, n = no): ");
+            } while (Console.ReadLine().ToLower() == "y");
 
             Console.WriteLine("Bye");
         }
