@@ -48,4 +48,3 @@ Bye
 
 - Make sure to enter valid numbers and operations.
 - Dividing by zero will cause an error.
-- Input is now entered on the same line as the prompt for a smoother user experience.
