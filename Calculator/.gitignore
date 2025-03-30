@@ -1,0 +1,18 @@
+# Build artifacts
+bin/
+obj/
+
+# Temporary files
+*.tmp
+*.log
+*.user
+*.suo
+*.pdb
+*.cache
+*.csproj.user
+
+# Other
+*.exe
+*.dll
+*.json
+*.editorconfig
