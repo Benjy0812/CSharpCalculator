@@ -1,4 +1,4 @@
-# Calculator Program
+# CSharpCalculator
 
 This is a simple program you can run in the console. It lets you do basic math like adding, subtracting, multiplying, dividing, and finding the remainder.
 
