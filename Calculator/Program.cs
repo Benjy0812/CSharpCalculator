@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            do {
+            do
+            {
                 double num1;
                 double num2;
                 double result;
@@ -13,10 +14,10 @@
                 Console.WriteLine("Calculator Program");
                 Console.WriteLine("------------------");
 
-                Console.Write("Enter number 1: ");
+                Console.Write("Enter first number: ");
                 num1 = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Enter number 2: ");
+                Console.Write("Enter secund number: ");
                 num2 = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine("Enter an option");
@@ -26,7 +27,7 @@
                 Console.WriteLine("\t% : Modulus");
                 Console.WriteLine("\t/ : Divide");
                 Console.Write("Enter your option: ");
-                
+
                 switch (Console.ReadLine())
                 {
                     case "+":
@@ -54,7 +55,7 @@
                         break;
                 }
                 Console.Write("Would you like to continue? (y = yes, n = no): ");
-            } while (Console.ReadLine().ToLower() == "y");
+            } while ((Console.ReadLine() ?? string.Empty).ToLower() == "y");
 
             Console.WriteLine("Bye");
         }
